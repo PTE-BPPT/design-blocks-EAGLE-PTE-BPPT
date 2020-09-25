@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <designblock>
 <description></description>
 <attributes>
@@ -928,67 +928,6 @@ Updated by Yingchun,Shan 2019-11-05
 </parts>
 <sheets>
 <sheet>
-<description>Microcontroller STM32F413VHT6</description>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
 <plain>
 </plain>
 <instances>
@@ -998,7 +937,7 @@ Updated by Yingchun,Shan 2019-11-05
 </instance>
 <instance part="D4" gate="G$1" x="121.92" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="121.92" y="127" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="129.54" y="127" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="124.46" y="121.92" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R18" gate="G$1" x="132.08" y="142.24" smashed="yes">
 <attribute name="NAME" x="128.27" y="143.7386" size="1.778" layer="95"/>
@@ -1111,12 +1050,7 @@ Updated by Yingchun,Shan 2019-11-05
 </sheet>
 </sheets>
 <errors>
-<approved hash="202,4,129.54,119.38,U7,T2IN,,,,"/>
-<approved hash="202,4,165.1,114.3,U7,R2IN,,,,"/>
-<approved hash="202,4,22.86,55.88,U8,CTS#,,,,"/>
-<approved hash="202,5,124.46,96.52,U10,RESERVED_2,,,,"/>
-<approved hash="202,5,124.46,104.14,U10,RESERVED,,,,"/>
-<approved hash="202,7,78.74,129.54,U14,!SHDN,,,,"/>
+<approved hash="202,1,78.74,129.54,U14,!SHDN,,,,"/>
 </errors>
 </schematic>
 </drawing>
