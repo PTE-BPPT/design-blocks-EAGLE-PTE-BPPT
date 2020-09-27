@@ -5,7 +5,7 @@
 <description></description>
 <attributes>
 <attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="10.6 x 19.8 mm"/>
+<attribute name="BOARDSIZE" value="7.8 x 32.7 mm"/>
 <attribute name="LAYERS" value="1: 1"/>
 </attributes>
 <drawings>
@@ -459,25 +459,53 @@ Source: &lt;a href="https://www.analog.com/media/en/technical-documentation/data
 </class>
 </classes>
 <parts>
-<part name="IC2" library="SamacSys_Parts" deviceset="ADP1715ARMZ-3.3-R7" device="" override_package3d_urn="urn:adsk.eagle:package:22987822/2" override_package_urn="urn:adsk.eagle:footprint:22987824/1"/>
+<part name="IC1" library="SamacSys_Parts" deviceset="ADP1715ARMZ-3.3-R7" device="" override_package3d_urn="urn:adsk.eagle:package:22987822/2" override_package_urn="urn:adsk.eagle:footprint:22987824/1">
+<attribute name="DESCRIPTION" value="IC REG LINEAR 3.3V 500MA 8MSOP"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/analog-devices-inc/ADP1715ARMZ-3.3-R7/ADP1715ARMZ-3.3-R7CT-ND/1630787"/>
+<attribute name="MANUFACTURERNAME" value="Analog Devices Inc."/>
+<attribute name="MANUFACTURERPARTNUMBER" value="ADP1715ARMZ-3.3-R7"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C18" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0603-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271169/1" value="2.2uF"/>
-<part name="C19" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0603-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271169/1" value="2.2uF"/>
-<part name="C20" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0402-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19270098/1" value="10nF"/>
+<part name="C3" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0402-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19270098/1" value="10nF">
+<attribute name="DESCRIPTION" value="CAP CER 10000PF 16V X7R 0402"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/yageo/CC0402KRX7R7BB103/311-1042-1-ND/302959"/>
+<attribute name="MANUFACTURERNAME" value="Yageo"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="CC0402KRX7R7BB103"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
+<part name="C1" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0603-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271169/1" value="2.2uF">
+<attribute name="DESCRIPTION" value="CAP CER 2.2UF 16V X5R 0603"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/tdk-corporation/C1608X5R1C225K080AB/445-5157-1-ND/2093772"/>
+<attribute name="MANUFACTURERNAME" value="TDK Corporation"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="C1608X5R1C225K080AB"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
+<part name="C2" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0603-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271169/1" value="2.2uF">
+<attribute name="DESCRIPTION" value="CAP CER 2.2UF 16V X5R 0603"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/tdk-corporation/C1608X5R1C225K080AB/445-5157-1-ND/2093772"/>
+<attribute name="MANUFACTURERNAME" value="TDK Corporation"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="C1608X5R1C225K080AB"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="IC2" gate="G$1" x="33.02" y="55.88" smashed="yes">
+<instance part="IC1" gate="G$1" x="33.02" y="55.88" smashed="yes">
 <attribute name="NAME" x="57.15" y="63.5" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="57.15" y="60.96" size="1.778" layer="96" align="center-left"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="33.02" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERNAME" x="33.02" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEYLINK" x="33.02" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="TYPE" x="33.02" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="P+5" gate="1" x="17.78" y="71.12" smashed="yes">
-<attribute name="VALUE" x="15.24" y="66.04" size="1.778" layer="96" rot="R90"/>
+<instance part="P+5" gate="1" x="17.78" y="73.66" smashed="yes">
+<attribute name="VALUE" x="15.24" y="68.58" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V9" gate="G$1" x="17.78" y="53.34" smashed="yes">
 <attribute name="VALUE" x="15.24" y="48.26" size="1.778" layer="96" rot="R90"/>
@@ -485,17 +513,32 @@ Source: &lt;a href="https://www.analog.com/media/en/technical-documentation/data
 <instance part="GND16" gate="1" x="63.5" y="25.4" smashed="yes">
 <attribute name="VALUE" x="60.96" y="22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="C18" gate="G$1" x="22.86" y="45.72" smashed="yes">
-<attribute name="NAME" x="24.384" y="46.101" size="1.778" layer="95"/>
-<attribute name="VALUE" x="24.384" y="41.021" size="1.778" layer="96"/>
-</instance>
-<instance part="C19" gate="G$1" x="22.86" y="63.5" smashed="yes">
-<attribute name="NAME" x="24.384" y="63.881" size="1.778" layer="95"/>
-<attribute name="VALUE" x="24.384" y="58.801" size="1.778" layer="96"/>
-</instance>
-<instance part="C20" gate="G$1" x="33.02" y="38.1" smashed="yes">
+<instance part="C3" gate="G$1" x="33.02" y="38.1" smashed="yes">
 <attribute name="NAME" x="34.544" y="38.481" size="1.778" layer="95"/>
 <attribute name="VALUE" x="34.544" y="33.401" size="1.778" layer="96"/>
+<attribute name="DESCRIPTION" x="33.02" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="33.02" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEYLINK" x="33.02" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="TYPE" x="33.02" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERNAME" x="33.02" y="38.1" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C1" gate="G$1" x="22.86" y="66.04" smashed="yes">
+<attribute name="NAME" x="24.384" y="66.421" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.384" y="61.341" size="1.778" layer="96"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="22.86" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="22.86" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEYLINK" x="22.86" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="TYPE" x="22.86" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERNAME" x="22.86" y="66.04" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="22.86" y="45.72" smashed="yes">
+<attribute name="NAME" x="24.384" y="46.101" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.384" y="41.021" size="1.778" layer="96"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="22.86" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="22.86" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEYLINK" x="22.86" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="TYPE" x="22.86" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERNAME" x="22.86" y="45.72" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -503,70 +546,70 @@ Source: &lt;a href="https://www.analog.com/media/en/technical-documentation/data
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="GND_4"/>
+<pinref part="IC1" gate="G$1" pin="GND_4"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="60.96" y1="55.88" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="55.88" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="GND_3"/>
+<pinref part="IC1" gate="G$1" pin="GND_3"/>
 <wire x1="63.5" y1="53.34" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="50.8" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="48.26" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="30.48" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
 <junction x="63.5" y="53.34"/>
-<pinref part="IC2" gate="G$1" pin="GND_2"/>
+<pinref part="IC1" gate="G$1" pin="GND_2"/>
 <wire x1="60.96" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
 <junction x="63.5" y="50.8"/>
-<pinref part="IC2" gate="G$1" pin="GND_1"/>
+<pinref part="IC1" gate="G$1" pin="GND_1"/>
 <wire x1="60.96" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
 <junction x="63.5" y="48.26"/>
-<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="33.02" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 <junction x="63.5" y="30.48"/>
-<pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="40.64" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <junction x="33.02" y="30.48"/>
-<pinref part="C19" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="58.42" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="60.96" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
 <junction x="63.5" y="55.88"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="OUT"/>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <wire x1="33.02" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="48.26" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
 <junction x="22.86" y="50.8"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="SS"/>
-<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="SS"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="48.26" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="P+5" gate="1" pin="+5V"/>
-<wire x1="17.78" y1="68.58" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="EN"/>
-<wire x1="17.78" y1="66.04" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="71.12" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="EN"/>
+<wire x1="17.78" y1="68.58" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="55.88" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="IN"/>
+<pinref part="IC1" gate="G$1" pin="IN"/>
 <wire x1="30.48" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="53.34" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
 <junction x="30.48" y="55.88"/>
-<pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
-<junction x="17.78" y="66.04"/>
+<wire x1="22.86" y1="68.58" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<junction x="17.78" y="68.58"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -1041,59 +1084,80 @@ design rules under a new name.</description>
 <board_group name="SYMBOLACC4"/>
 </groups>
 <elements>
-<element name="IC2" library="SamacSys_Parts" package="SOP65P490X110-8N" override_package3d_urn="urn:adsk.eagle:package:22987822/2" override_package_urn="urn:adsk.eagle:footprint:22987824/1" value="ADP1715ARMZ-3.3-R7" x="47.48" y="28.07" smashed="yes" rot="R270">
+<element name="IC1" library="SamacSys_Parts" package="SOP65P490X110-8N" override_package3d_urn="urn:adsk.eagle:package:22987822/2" override_package_urn="urn:adsk.eagle:footprint:22987824/1" value="ADP1715ARMZ-3.3-R7" x="47.48" y="28.07" smashed="yes" rot="R270">
 <attribute name="ARROW_PART_NUMBER" value="ADP1715ARMZ-3.3-R7" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/adp1715armz-3.3-r7/analog-devices" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DESCRIPTION" value="Analog Devices ADP1715ARMZ-3.3-R7, LDO Regulator, 500mA, 3.3 V, +/-3%, 2.5  5.5 Vin 8-Pin, MSOP" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value="IC REG LINEAR 3.3V 500MA 8MSOP" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/analog-devices-inc/ADP1715ARMZ-3.3-R7/ADP1715ARMZ-3.3-R7CT-ND/1630787" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="1.1mm" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURERNAME" value="Analog Devices Inc." x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="ADP1715ARMZ-3.3-R7" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Analog Devices" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ADP1715ARMZ-3.3-R7" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="584-ADP1715ARMZ3.3R7" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADP1715ARMZ-33-R7?qs=WIvQP4zGangwvEjYWS0N2Q%3D%3D" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TYPE" value="SMD" x="47.48" y="28.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="47.48" y="28.07" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
-<element name="C18" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1608X80N-0603-KEMET" package3d_urn="urn:adsk.eagle:package:19271169/1" value="2.2uF" x="45.47" y="32.65" smashed="yes" rot="R180">
-<attribute name="VALUE" x="45.47" y="34.074" size="1.27" layer="27" rot="R180" align="top-center"/>
-</element>
-<element name="C19" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1608X80N-0603-KEMET" package3d_urn="urn:adsk.eagle:package:19271169/1" value="2.2uF" x="49.38" y="32.67" smashed="yes">
-<attribute name="VALUE" x="49.38" y="31.246" size="1.27" layer="27" align="top-center"/>
-</element>
-<element name="C20" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1005X50N-0402-KEMET" package3d_urn="urn:adsk.eagle:package:19270098/1" value="10nF" x="44.48" y="28.22" smashed="yes" rot="R270">
+<element name="C3" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1005X50N-0402-KEMET" package3d_urn="urn:adsk.eagle:package:19270098/1" value="10nF" x="44.48" y="28.22" smashed="yes" rot="R270">
+<attribute name="DESCRIPTION" value="CAP CER 10000PF 16V X7R 0402" x="44.48" y="28.22" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/yageo/CC0402KRX7R7BB103/311-1042-1-ND/302959" x="44.48" y="28.22" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURERNAME" value="Yageo" x="44.48" y="28.22" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="CC0402KRX7R7BB103" x="44.48" y="28.22" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TYPE" value="SMD" x="44.48" y="28.22" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="43.2198" y="28.22" size="1.27" layer="27" rot="R270" align="top-center"/>
+</element>
+<element name="C1" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1608X80N-0603-KEMET" package3d_urn="urn:adsk.eagle:package:19271169/1" value="2.2uF" x="45.4" y="14.8" smashed="yes">
+<attribute name="DESCRIPTION" value="CAP CER 2.2UF 16V X5R 0603" x="45.4" y="14.8" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/tdk-corporation/C1608X5R1C225K080AB/445-5157-1-ND/2093772" x="45.4" y="14.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERNAME" value="TDK Corporation" x="45.4" y="14.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="C1608X5R1C225K080AB" x="45.4" y="14.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="45.4" y="16.224" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="TYPE" value="SMD" x="45.4" y="14.8" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="45.4" y="13.376" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="C2" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1608X80N-0603-KEMET" package3d_urn="urn:adsk.eagle:package:19271169/1" value="2.2uF" x="45.4" y="8.4" smashed="yes">
+<attribute name="DESCRIPTION" value="CAP CER 2.2UF 16V X5R 0603" x="45.4" y="8.4" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/tdk-corporation/C1608X5R1C225K080AB/445-5157-1-ND/2093772" x="45.4" y="8.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERNAME" value="TDK Corporation" x="45.4" y="8.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="C1608X5R1C225K080AB" x="45.4" y="8.4" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="45.4" y="9.824" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="TYPE" value="SMD" x="45.4" y="8.4" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="45.4" y="6.976" size="1.27" layer="27" align="top-center"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="IC2" pad="8"/>
-<contactref element="IC2" pad="7"/>
-<contactref element="IC2" pad="6"/>
-<contactref element="IC2" pad="5"/>
-<contactref element="C20" pad="2"/>
-<contactref element="C18" pad="2"/>
-<contactref element="C19" pad="2"/>
-<wire x1="44.6749" y1="32.65" x2="50.1751" y2="32.67" width="0" layer="19" extent="1-1"/>
-<wire x1="44.48" y1="27.7575" x2="44.6749" y2="32.65" width="0" layer="19" extent="1-1"/>
-<wire x1="46.505" y1="25.845" x2="44.48" y2="27.7575" width="0" layer="19" extent="1-1"/>
-<wire x1="47.155" y1="25.845" x2="46.505" y2="25.845" width="0" layer="19" extent="1-1"/>
-<wire x1="47.805" y1="25.845" x2="47.155" y2="25.845" width="0" layer="19" extent="1-1"/>
-<wire x1="48.455" y1="25.845" x2="47.805" y2="25.845" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="8"/>
+<contactref element="IC1" pad="7"/>
+<contactref element="IC1" pad="6"/>
+<contactref element="IC1" pad="5"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C2" pad="2"/>
+<wire x1="47.805" y1="25.845" x2="48.455" y2="25.845" width="0" layer="19" extent="1-1"/>
+<wire x1="47.155" y1="25.845" x2="47.805" y2="25.845" width="0" layer="19" extent="1-1"/>
+<wire x1="46.505" y1="25.845" x2="47.155" y2="25.845" width="0" layer="19" extent="1-1"/>
+<wire x1="44.48" y1="27.7575" x2="46.505" y2="25.845" width="0" layer="19" extent="1-1"/>
+<wire x1="46.1951" y1="14.8" x2="46.505" y2="25.845" width="0" layer="19" extent="1-1"/>
+<wire x1="46.1951" y1="8.4" x2="46.1951" y2="14.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
-<contactref element="IC2" pad="3"/>
-<contactref element="C18" pad="1"/>
-<wire x1="46.2651" y1="32.65" x2="47.155" y2="30.295" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="3"/>
+<contactref element="C2" pad="1"/>
+<wire x1="44.6049" y1="8.4" x2="47.155" y2="30.295" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
-<contactref element="IC2" pad="4"/>
-<contactref element="C20" pad="1"/>
+<contactref element="IC1" pad="4"/>
+<contactref element="C3" pad="1"/>
 <wire x1="44.48" y1="28.6825" x2="46.505" y2="30.295" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
-<contactref element="IC2" pad="1"/>
-<contactref element="IC2" pad="2"/>
-<contactref element="C19" pad="1"/>
-<wire x1="48.455" y1="30.295" x2="48.5849" y2="32.67" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="1"/>
+<contactref element="IC1" pad="2"/>
+<contactref element="C1" pad="1"/>
 <wire x1="47.805" y1="30.295" x2="48.455" y2="30.295" width="0" layer="19" extent="1-1"/>
+<wire x1="44.6049" y1="14.8" x2="47.805" y2="30.295" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

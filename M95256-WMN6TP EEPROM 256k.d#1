@@ -409,13 +409,7 @@ Source: &lt;a href="http://www.st.com/st-web-ui/static/active/en/resource/techni
 <attribute name="MANUFACTURERPARTNUMBER" value="CGA2B1X7R1C104K050BC"/>
 <attribute name="TYPE" value="SMD"/>
 </part>
-<part name="IC7" library="SamacSys_Parts" deviceset="M95256-WMN6TP" device="" override_package3d_urn="urn:adsk.eagle:package:23143915/2" override_package_urn="urn:adsk.eagle:footprint:23143916/1">
-<attribute name="DESCRIPTION" value="IC EEPROM 256K SPI 20MHZ 8SO"/>
-<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/stmicroelectronics/M95256-WMN6TP/497-8691-1-ND/2038735"/>
-<attribute name="MANUFACTURERNAME" value="STMicroelectronics"/>
-<attribute name="MANUFACTURERPARTNUMBER" value="M95256-WMN6TP"/>
-<attribute name="TYPE" value="SMD"/>
-</part>
+<part name="IC7" library="SamacSys_Parts" deviceset="M95256-WMN6TP" device="" override_package3d_urn="urn:adsk.eagle:package:23143915/2" override_package_urn="urn:adsk.eagle:footprint:23143916/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -440,10 +434,6 @@ Source: &lt;a href="http://www.st.com/st-web-ui/static/active/en/resource/techni
 <instance part="IC7" gate="G$1" x="193.04" y="137.16" smashed="yes">
 <attribute name="NAME" x="217.17" y="144.78" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="217.17" y="142.24" size="1.778" layer="96" align="center-left"/>
-<attribute name="DIGIKEYLINK" x="193.04" y="137.16" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURERPARTNUMBER" x="193.04" y="137.16" size="1.778" layer="96" display="off"/>
-<attribute name="TYPE" x="193.04" y="137.16" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURERNAME" x="193.04" y="137.16" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -983,16 +973,12 @@ design rules under a new name.</description>
 <element name="IC7" library="SamacSys_Parts" package="SOIC127P600X175-8N" override_package3d_urn="urn:adsk.eagle:package:23143915/2" override_package_urn="urn:adsk.eagle:footprint:23143916/1" value="M95256-WMN6TP" x="6.14" y="2.64" smashed="yes" rot="R90">
 <attribute name="ARROW_PART_NUMBER" value="M95256-WMN6TP" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/m95256-wmn6tp/stmicroelectronics" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="IC EEPROM 256K SPI 20MHZ 8SO" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/stmicroelectronics/M95256-WMN6TP/497-8691-1-ND/2038735" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value="M95256-WMN6TP, Serial EEPROM Memory 256kbit, Serial-SPI, 60ns 2.5  5.5 V, 8-Pin SOIC" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HEIGHT" value="1.75mm" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURERNAME" value="STMicroelectronics" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURERPARTNUMBER" value="M95256-WMN6TP" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="STMicroelectronics" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="M95256-WMN6TP" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="511-M95256-WMN6TP" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/STMicroelectronics/M95256-WMN6TP?qs=OMlU9E68qqSKuCgLK2r71Q%3D%3D" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TYPE" value="SMD" x="6.14" y="2.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="6.14" y="2.64" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
 </elements>

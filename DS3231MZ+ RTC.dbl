@@ -5,7 +5,7 @@
 <description></description>
 <attributes>
 <attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="22.3 x 20.6 mm"/>
+<attribute name="BOARDSIZE" value="24.4 x 22.8 mm"/>
 <attribute name="LAYERS" value="2: 1, 16"/>
 </attributes>
 <drawings>
@@ -541,28 +541,72 @@ Source: &lt;a href="http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf"&gt;
 </class>
 </classes>
 <parts>
-<part name="IC11" library="SamacSys_Parts" deviceset="DS3231MZ+" device="" override_package3d_urn="urn:adsk.eagle:package:22987922/2" override_package_urn="urn:adsk.eagle:footprint:22987923/1" override_locally_modified="yes"/>
-<part name="BT1" library="BK-916-TR" deviceset="BK-916-TR" device="" override_package3d_urn="urn:adsk.eagle:package:22987942/2" override_package_urn="urn:adsk.eagle:footprint:22987943/1"/>
+<part name="IC1" library="SamacSys_Parts" deviceset="DS3231MZ+" device="" override_package3d_urn="urn:adsk.eagle:package:22987922/2" override_package_urn="urn:adsk.eagle:footprint:22987923/1" override_locally_modified="yes">
+<attribute name="DESCRIPTION" value="IC RTC CLK/CALENDAR I2C 8-SOIC"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/maxim-integrated/DS3231MZ/DS3231MZ-ND/2754396"/>
+<attribute name="MANUFACTURERNAME" value="Maxim Integrated"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="DS3231MZ+"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
+<part name="BT1" library="BK-916-TR" deviceset="BK-916-TR" device="" override_package3d_urn="urn:adsk.eagle:package:22987942/2" override_package_urn="urn:adsk.eagle:footprint:22987943/1">
+<attribute name="DESCRIPTION" value="BATTERY RETAINER COIN 12MM SMD"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BK-916-TR/BK-916-CT-ND/6200238"/>
+<attribute name="MANUFACTURERNAME" value="MPD (Memory Protection Devices)"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="BK-916-TR"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R10" library="Resistor Capacitor Standard Eagle 3D" deviceset="R0402-TE" device="" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K"/>
-<part name="R11" library="Resistor Capacitor Standard Eagle 3D" deviceset="R0402-TE" device="" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K"/>
-<part name="R12" library="Resistor Capacitor Standard Eagle 3D" deviceset="R0402-TE" device="" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K"/>
-<part name="C30" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0402-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19270098/1" value="0.1uF"/>
+<part name="C1" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0402-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19270098/1" value="0.1uF">
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/tdk-corporation/CGA2B1X7R1C104K050BC/445-5613-1-ND/2443653"/>
+<attribute name="MANUFACTURERNAME" value="TDK Corporation"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="CGA2B1X7R1C104K050BC"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R1" library="Resistor Capacitor Standard Eagle 3D" deviceset="R0402-TE" device="" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K">
+<attribute name="DESCRIPTION" value="RES SMD 10K OHM 1% 1/16W 0402"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10.0KLRCT-ND/729470"/>
+<attribute name="MANUFACTURERNAME" value="Yageo"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="RC0402FR-0710KL"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
+<part name="R2" library="Resistor Capacitor Standard Eagle 3D" deviceset="R0402-TE" device="" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K">
+<attribute name="DESCRIPTION" value="RES SMD 10K OHM 1% 1/16W 0402"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10.0KLRCT-ND/729470"/>
+<attribute name="MANUFACTURERNAME" value="Yageo"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="RC0402FR-0710KL"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
+<part name="R3" library="Resistor Capacitor Standard Eagle 3D" deviceset="R0402-TE" device="" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K">
+<attribute name="DESCRIPTION" value="RES SMD 10K OHM 1% 1/16W 0402"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10.0KLRCT-ND/729470"/>
+<attribute name="MANUFACTURERNAME" value="Yageo"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="RC0402FR-0710KL"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="IC11" gate="G$1" x="66.04" y="132.08" smashed="yes">
+<instance part="IC1" gate="G$1" x="66.04" y="132.08" smashed="yes">
 <attribute name="NAME" x="95.25" y="139.7" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="95.25" y="137.16" size="1.778" layer="96" align="center-left"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="66.04" y="132.08" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEYLINK" x="66.04" y="132.08" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERNAME" x="66.04" y="132.08" size="1.778" layer="96" display="off"/>
+<attribute name="TYPE" x="66.04" y="132.08" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="BT1" gate="G$1" x="119.38" y="116.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="114.29453125" y="114.29726875" size="1.779909375" layer="95" rot="R90"/>
 <attribute name="VALUE" x="124.469490625" y="114.29525" size="1.78131875" layer="96" rot="R90"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="119.38" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DIGIKEYLINK" x="119.38" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURERNAME" x="119.38" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="TYPE" x="119.38" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND25" gate="1" x="119.38" y="99.06" smashed="yes">
 <attribute name="VALUE" x="116.84" y="96.52" size="1.778" layer="96"/>
@@ -570,24 +614,44 @@ Source: &lt;a href="http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf"&gt;
 <instance part="+3V12" gate="G$1" x="48.26" y="162.56" smashed="yes">
 <attribute name="VALUE" x="45.72" y="157.48" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R10" gate="G$1" x="109.22" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.7214" y="146.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="112.522" y="146.05" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R11" gate="G$1" x="116.84" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="115.3414" y="146.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="120.142" y="146.05" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R12" gate="G$1" x="58.42" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.9214" y="146.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="61.722" y="146.05" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C30" gate="G$1" x="38.1" y="147.32" smashed="yes">
+<instance part="C1" gate="G$1" x="38.1" y="147.32" smashed="yes">
 <attribute name="NAME" x="39.624" y="147.701" size="1.778" layer="95"/>
 <attribute name="VALUE" x="39.624" y="142.621" size="1.778" layer="96"/>
+<attribute name="DESCRIPTION" x="38.1" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="38.1" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEYLINK" x="38.1" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="TYPE" x="38.1" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERNAME" x="38.1" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND27" gate="1" x="38.1" y="137.16" smashed="yes">
 <attribute name="VALUE" x="35.56" y="134.62" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="109.22" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="107.7214" y="146.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="112.522" y="146.05" size="1.778" layer="96" rot="R90"/>
+<attribute name="DIGIKEYLINK" x="109.22" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="109.22" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="109.22" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="TYPE" x="109.22" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURERNAME" x="109.22" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R2" gate="G$1" x="116.84" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="115.3414" y="146.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="120.142" y="146.05" size="1.778" layer="96" rot="R90"/>
+<attribute name="DIGIKEYLINK" x="116.84" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="116.84" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="116.84" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="TYPE" x="116.84" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURERNAME" x="116.84" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R3" gate="G$1" x="58.42" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="56.9214" y="146.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="61.722" y="146.05" size="1.778" layer="96" rot="R90"/>
+<attribute name="DIGIKEYLINK" x="58.42" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="58.42" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" x="58.42" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="TYPE" x="58.42" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MANUFACTURERNAME" x="58.42" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -597,7 +661,7 @@ Source: &lt;a href="http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf"&gt;
 <segment>
 <pinref part="BT1" gate="G$1" pin="+"/>
 <wire x1="119.38" y1="121.92" x2="119.38" y2="127" width="0.1524" layer="91"/>
-<pinref part="IC11" gate="G$1" pin="VBAT"/>
+<pinref part="IC1" gate="G$1" pin="VBAT"/>
 <wire x1="119.38" y1="127" x2="99.06" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -606,7 +670,7 @@ Source: &lt;a href="http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf"&gt;
 <pinref part="BT1" gate="G$1" pin="-"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="119.38" y1="111.76" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="IC11" gate="G$1" pin="GND"/>
+<pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="119.38" y1="106.68" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="124.46" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="124.46" x2="106.68" y2="106.68" width="0.1524" layer="91"/>
@@ -615,72 +679,72 @@ Source: &lt;a href="http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf"&gt;
 </segment>
 <segment>
 <pinref part="GND27" gate="1" pin="GND"/>
-<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="139.7" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="IC11" gate="G$1" pin="VCC"/>
+<pinref part="IC1" gate="G$1" pin="VCC"/>
 <wire x1="66.04" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 <wire x1="48.26" y1="129.54" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="157.48" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="154.94" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="157.48" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
 <junction x="48.26" y="157.48"/>
-<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="154.94" x2="109.22" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="157.48" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
 <junction x="58.42" y="157.48"/>
-<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="154.94" x2="116.84" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="157.48" x2="109.22" y2="157.48" width="0.1524" layer="91"/>
 <junction x="109.22" y="157.48"/>
-<pinref part="C30" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="149.86" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="157.48" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="RTC_INT" class="0">
 <segment>
-<pinref part="IC11" gate="G$1" pin="!INT!/SQW"/>
+<pinref part="IC1" gate="G$1" pin="!INT!/SQW"/>
 <wire x1="66.04" y1="127" x2="58.42" y2="127" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="127" x2="48.26" y2="127" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="144.78" x2="58.42" y2="127" width="0.1524" layer="91"/>
 <junction x="58.42" y="127"/>
 <label x="48.26" y="127" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RTC_RST" class="0">
 <segment>
-<pinref part="IC11" gate="G$1" pin="!RST"/>
+<pinref part="IC1" gate="G$1" pin="!RST"/>
 <wire x1="66.04" y1="124.46" x2="48.26" y2="124.46" width="0.1524" layer="91"/>
 <label x="48.26" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RTC_SCL" class="0">
 <segment>
-<pinref part="IC11" gate="G$1" pin="SCL"/>
+<pinref part="IC1" gate="G$1" pin="SCL"/>
 <wire x1="99.06" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="144.78" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
 <junction x="109.22" y="132.08"/>
 <label x="119.38" y="132.08" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RTC_SDA" class="0">
 <segment>
-<pinref part="IC11" gate="G$1" pin="SDA"/>
+<pinref part="IC1" gate="G$1" pin="SDA"/>
 <wire x1="99.06" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="129.54" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="144.78" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
 <junction x="116.84" y="129.54"/>
 <label x="119.38" y="129.54" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -1205,82 +1269,113 @@ design rules under a new name.</description>
 <board_group name="SYMBOLACC4"/>
 </groups>
 <elements>
-<element name="IC11" library="SamacSys_Parts" package="SOIC127P600X175-8N" override_package3d_urn="urn:adsk.eagle:package:22987922/2" override_package_urn="urn:adsk.eagle:footprint:22987923/1" override_locally_modified="yes" value="DS3231MZ+" x="3.35" y="6.59" smashed="yes" rot="R90">
+<element name="IC1" library="SamacSys_Parts" package="SOIC127P600X175-8N" override_package3d_urn="urn:adsk.eagle:package:22987922/2" override_package_urn="urn:adsk.eagle:footprint:22987923/1" override_locally_modified="yes" value="DS3231MZ+" x="3.35" y="6.59" smashed="yes" rot="R90">
 <attribute name="ARROW_PART_NUMBER" value="DS3231MZ+" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="Real Time Clock 5+/-ppm RTC" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value="IC RTC CLK/CALENDAR I2C 8-SOIC" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/maxim-integrated/DS3231MZ/DS3231MZ-ND/2754396" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HEIGHT" value="1.75mm" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURERNAME" value="Maxim Integrated" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="DS3231MZ+" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Maxim Integrated" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DS3231MZ+" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="700-DS3231MZ+" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/DS3231MZ%2b?qs=4Rc5iGDDRGgASPOHxzykqQ%3D%3D" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TYPE" value="SMD" x="3.35" y="6.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="3.35" y="6.59" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
 <element name="BT1" library="BK-916-TR" package="BAT_BK-916-TR" override_package3d_urn="urn:adsk.eagle:package:22987942/2" override_package_urn="urn:adsk.eagle:footprint:22987943/1" value="BK-916-TR" x="13.32" y="6.73" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" BATTERY RETAINER COIN 12MM SMD " x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DESCRIPTION" value="BATTERY RETAINER COIN 12MM SMD" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="DIGIKEY-PURCHASE-URL" value="https://snapeda.com/shop?store=DigiKey&amp;id=4872100" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BK-916-TR/BK-916-CT-ND/6200238" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MANUFACTURERNAME" value="MPD (Memory Protection Devices)" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="BK-916-TR" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="MPD (Memory Protection Devices)" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MP" value="BK-916-TR" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="PACKAGE" value="None" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="TYPE" value="SMD" x="13.32" y="6.73" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="20.3258" y="15.987659375" size="1.27105" layer="28" rot="MR270"/>
 </element>
-<element name="R10" library="Resistor Capacitor Standard Eagle 3D" package="RESC1005X30N" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K" x="1.5" y="11.92" smashed="yes" rot="R90">
-<attribute name="VALUE" x="2.7602" y="11.92" size="1.27" layer="27" rot="R90" align="top-center"/>
-</element>
-<element name="R11" library="Resistor Capacitor Standard Eagle 3D" package="RESC1005X30N" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K" x="2.74" y="11.93" smashed="yes" rot="R90">
-<attribute name="VALUE" x="4.0002" y="11.93" size="1.27" layer="27" rot="R90" align="top-center"/>
-</element>
-<element name="R12" library="Resistor Capacitor Standard Eagle 3D" package="RESC1005X30N" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K" x="2.77" y="1.36" smashed="yes" rot="R270">
-<attribute name="VALUE" x="1.5098" y="1.36" size="1.27" layer="27" rot="R270" align="top-center"/>
-</element>
-<element name="C30" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1005X50N-0402-KEMET" package3d_urn="urn:adsk.eagle:package:19270098/1" value="0.1uF" x="1.51" y="1.36" smashed="yes" rot="R270">
+<element name="C1" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1005X50N-0402-KEMET" package3d_urn="urn:adsk.eagle:package:19270098/1" value="0.1uF" x="1.51" y="1.36" smashed="yes" rot="R270">
+<attribute name="DESCRIPTION" value="CAP CER 0.1UF 16V X7R 0402" x="1.51" y="1.36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/tdk-corporation/CGA2B1X7R1C104K050BC/445-5613-1-ND/2443653" x="1.51" y="1.36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURERNAME" value="TDK Corporation" x="1.51" y="1.36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="CGA2B1X7R1C104K050BC" x="1.51" y="1.36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TYPE" value="SMD" x="1.51" y="1.36" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.2498" y="1.36" size="1.27" layer="27" rot="R270" align="top-center"/>
+</element>
+<element name="R1" library="Resistor Capacitor Standard Eagle 3D" package="RESC1005X30N" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K" x="-1.5" y="10.4" smashed="yes">
+<attribute name="DESCRIPTION" value="RES SMD 10K OHM 1% 1/16W 0402" x="-1.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10.0KLRCT-ND/729470" x="-1.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERNAME" value="Yageo" x="-1.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="RC0402FR-0710KL" x="-1.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-1.5" y="11.6602" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="TYPE" value="SMD" x="-1.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-1.5" y="9.1398" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="R2" library="Resistor Capacitor Standard Eagle 3D" package="RESC1005X30N" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K" x="-1.5" y="4.3" smashed="yes">
+<attribute name="DESCRIPTION" value="RES SMD 10K OHM 1% 1/16W 0402" x="-1.5" y="4.3" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10.0KLRCT-ND/729470" x="-1.5" y="4.3" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERNAME" value="Yageo" x="-1.5" y="4.3" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="RC0402FR-0710KL" x="-1.5" y="4.3" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-1.5" y="5.5602" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="TYPE" value="SMD" x="-1.5" y="4.3" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-1.5" y="3.0398" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="R3" library="Resistor Capacitor Standard Eagle 3D" package="RESC1005X30N" package3d_urn="urn:adsk.eagle:package:19398936/1" value="10K" x="-1.5" y="-1.8" smashed="yes">
+<attribute name="DESCRIPTION" value="RES SMD 10K OHM 1% 1/16W 0402" x="-1.5" y="-1.8" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10.0KLRCT-ND/729470" x="-1.5" y="-1.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERNAME" value="Yageo" x="-1.5" y="-1.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="RC0402FR-0710KL" x="-1.5" y="-1.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-1.5" y="-0.5398" size="1.27" layer="25" align="bottom-center"/>
+<attribute name="TYPE" value="SMD" x="-1.5" y="-1.8" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-1.5" y="-3.0602" size="1.27" layer="27" align="top-center"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="BT1" pad="3"/>
-<contactref element="IC11" pad="5"/>
-<contactref element="C30" pad="2"/>
+<contactref element="IC1" pad="5"/>
+<contactref element="C1" pad="2"/>
 <wire x1="5.255" y1="9.302" x2="13.32" y2="6.73" width="0" layer="19" extent="1-16"/>
 <wire x1="1.51" y1="0.8975" x2="5.255" y2="9.302" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
-<contactref element="IC11" pad="2"/>
-<contactref element="R12" pad="2"/>
-<contactref element="R10" pad="2"/>
-<contactref element="R11" pad="2"/>
-<contactref element="C30" pad="1"/>
-<wire x1="2.74" y1="12.4138" x2="1.5" y2="12.4038" width="0" layer="19" extent="1-1"/>
-<wire x1="2.715" y1="3.878" x2="2.74" y2="12.4138" width="0" layer="19" extent="1-1"/>
-<wire x1="1.51" y1="1.8225" x2="2.715" y2="3.878" width="0" layer="19" extent="1-1"/>
-<wire x1="2.77" y1="0.8762" x2="1.51" y2="1.8225" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="2"/>
+<contactref element="C1" pad="1"/>
+<contactref element="R1" pad="2"/>
+<contactref element="R2" pad="2"/>
+<contactref element="R3" pad="2"/>
+<wire x1="-1.0162" y1="4.3" x2="-1.0162" y2="-1.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.0162" y1="10.4" x2="-1.0162" y2="4.3" width="0" layer="19" extent="1-1"/>
+<wire x1="1.51" y1="1.8225" x2="-1.0162" y2="10.4" width="0" layer="19" extent="1-1"/>
+<wire x1="2.715" y1="3.878" x2="1.51" y2="1.8225" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="BT1" pad="2"/>
 <contactref element="BT1" pad="1"/>
-<contactref element="IC11" pad="6"/>
+<contactref element="IC1" pad="6"/>
 <wire x1="13.27" y1="14.38" x2="13.27" y2="-0.92" width="0" layer="19" extent="16-16"/>
 <wire x1="3.985" y1="9.302" x2="13.27" y2="-0.92" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="RTC_SDA">
-<contactref element="IC11" pad="7"/>
-<contactref element="R11" pad="1"/>
-<wire x1="2.715" y1="9.302" x2="2.74" y2="11.4462" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="7"/>
+<contactref element="R2" pad="1"/>
+<wire x1="-1.9838" y1="4.3" x2="2.715" y2="9.302" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTC_SCL">
-<contactref element="IC11" pad="8"/>
-<contactref element="R10" pad="1"/>
-<wire x1="1.445" y1="9.302" x2="1.5" y2="11.4362" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="8"/>
+<contactref element="R1" pad="1"/>
+<wire x1="-1.9838" y1="10.4" x2="1.445" y2="9.302" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTC_INT">
-<contactref element="IC11" pad="3"/>
-<contactref element="R12" pad="1"/>
-<wire x1="2.77" y1="1.8438" x2="3.985" y2="3.878" width="0" layer="19" extent="1-1"/>
+<contactref element="IC1" pad="3"/>
+<contactref element="R3" pad="1"/>
+<wire x1="3.985" y1="3.878" x2="-1.9838" y2="-1.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTC_RST">
-<contactref element="IC11" pad="4"/>
+<contactref element="IC1" pad="4"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
