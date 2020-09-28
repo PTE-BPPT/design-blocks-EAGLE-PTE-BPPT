@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <designblock>
 <description></description>
 <attributes>
@@ -639,7 +639,13 @@
 </class>
 </classes>
 <parts>
-<part name="U2" library="BT832X" deviceset="BT832X" device="" override_package3d_urn="urn:adsk.eagle:package:19400705/2" override_package_urn="urn:adsk.eagle:footprint:19400706/1"/>
+<part name="U2" library="BT832X" deviceset="BT832X" device="" override_package3d_urn="urn:adsk.eagle:package:19400705/2" override_package_urn="urn:adsk.eagle:footprint:19400706/1">
+<attribute name="DESCRIPTION" value="RX TXRX MOD BLE 5 U.FL SMD"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/fanstel-corp/BT832XE/1914-1016-1-ND/8323669"/>
+<attribute name="MANUFACTURERNAME" value="Fanstel Corp."/>
+<attribute name="MANUFACTURERPARTNUMBER" value="BT832XE"/>
+<attribute name="TYPE" value="SMD"/>
+</part>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -652,7 +658,13 @@
 <text x="20.32" y="-175.26" size="5.08" layer="97" ratio="20">BLUETOOTH</text>
 </plain>
 <instances>
-<instance part="U2" gate="G$1" x="63.5" y="-127" smashed="yes"/>
+<instance part="U2" gate="G$1" x="63.5" y="-127" smashed="yes">
+<attribute name="MANUFACTURERPARTNUMBER" x="63.5" y="-127" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURERNAME" x="63.5" y="-127" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEYLINK" x="63.5" y="-127" size="1.778" layer="96" display="off"/>
+<attribute name="DESCRIPTION" x="63.5" y="-127" size="1.778" layer="96" display="off"/>
+<attribute name="TYPE" x="63.5" y="-127" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND46" gate="1" x="101.6" y="-127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="104.14" y="-124.46" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -1294,7 +1306,13 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U2" library="BT832X" package="BT832X" override_package3d_urn="urn:adsk.eagle:package:19400705/2" override_package_urn="urn:adsk.eagle:footprint:19400706/1" value="BT832X" x="104.77" y="27.37" smashed="yes" rot="R90"/>
+<element name="U2" library="BT832X" package="BT832X" override_package3d_urn="urn:adsk.eagle:package:19400705/2" override_package_urn="urn:adsk.eagle:footprint:19400706/1" value="BT832X" x="104.77" y="27.37" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="RX TXRX MOD BLE 5 U.FL SMD" x="104.77" y="27.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/fanstel-corp/BT832XE/1914-1016-1-ND/8323669" x="104.77" y="27.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURERNAME" value="Fanstel Corp." x="104.77" y="27.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURERPARTNUMBER" value="BT832XE" x="104.77" y="27.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TYPE" value="SMD" x="104.77" y="27.37" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="97.43" y="46.05" smashed="yes">
 <attribute name="VALUE" x="93.62" y="42.875" size="1.27" layer="27"/>
 </element>
