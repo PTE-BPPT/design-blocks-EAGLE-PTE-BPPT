@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <designblock>
 <description></description>
 <attributes>
 <attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="55.6 x 46.3 mm"/>
+<attribute name="BOARDSIZE" value="55.4 x 46 mm"/>
 <attribute name="LAYERS" value="1: 1"/>
 </attributes>
 <drawings>

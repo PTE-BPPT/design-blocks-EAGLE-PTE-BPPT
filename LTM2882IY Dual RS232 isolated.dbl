@@ -842,7 +842,7 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 </class>
 </classes>
 <parts>
-<part name="IC6" library="SamacSys_Parts" deviceset="LTM2882IY-3#PBF" device="" override_package3d_urn="urn:adsk.eagle:package:22987915/2" override_package_urn="urn:adsk.eagle:footprint:22987916/1" value="LTM2882IY-5#PBF">
+<part name="IC1" library="SamacSys_Parts" deviceset="LTM2882IY-3#PBF" device="" override_package3d_urn="urn:adsk.eagle:package:22987915/2" override_package_urn="urn:adsk.eagle:footprint:22987916/1" value="LTM2882IY-5#PBF">
 <attribute name="DESCRIPTION" value="DGT ISO 2500VRMS 4CH RS232 32BGA"/>
 <attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/analog-devices-inc/LTM2882IY-5-PBF/LTM2882IY-5-PBF-ND/2237166"/>
 <attribute name="MANUFACTURERNAME" value="Analog Devices Inc."/>
@@ -853,14 +853,14 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GNDI1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDI" device=""/>
-<part name="C26" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0805-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271181/1" value="10uF">
+<part name="C3" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0805-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271181/1" value="10uF">
 <attribute name="DESCRIPTION" value="CAP CER 10UF 10V X7R 0805"/>
 <attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/kemet/C0805C106K8RACTU/399-7411-1-ND/3317445"/>
 <attribute name="MANUFACTURERNAME" value="KEMET"/>
 <attribute name="MANUFACTURERPARTNUMBER" value="C0805C106K8RACTU"/>
 <attribute name="TYPE" value="SMD"/>
 </part>
-<part name="C27" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0603-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271169/1" value="1uF">
+<part name="C4" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0603-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271169/1" value="1uF">
 <attribute name="DESCRIPTION" value="CAPCER 1UF 10V X7R 0603"/>
 <attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/kemet/C0603C105K8RACTU/399-11133-1-ND/4357815"/>
 <attribute name="MANUFACTURERNAME" value="KEMET"/>
@@ -903,7 +903,7 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 <plain>
 </plain>
 <instances>
-<instance part="IC6" gate="G$1" x="175.26" y="114.3" smashed="yes">
+<instance part="IC1" gate="G$1" x="175.26" y="114.3" smashed="yes">
 <attribute name="NAME" x="204.47" y="121.92" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="204.47" y="119.38" size="1.778" layer="96" align="center-left"/>
 <attribute name="MANUFACTURERNAME" x="175.26" y="114.3" size="1.778" layer="96" display="off"/>
@@ -923,7 +923,7 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 <instance part="GNDI1" gate="G$1" x="231.14" y="66.04" smashed="yes">
 <attribute name="VALUE" x="228.6" y="63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="C26" gate="G$1" x="132.08" y="88.9" smashed="yes">
+<instance part="C3" gate="G$1" x="132.08" y="88.9" smashed="yes">
 <attribute name="NAME" x="133.604" y="89.281" size="1.778" layer="95"/>
 <attribute name="VALUE" x="133.604" y="84.201" size="1.778" layer="96"/>
 <attribute name="MANUFACTURERPARTNUMBER" x="132.08" y="88.9" size="1.778" layer="96" display="off"/>
@@ -932,7 +932,7 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 <attribute name="MANUFACTURERNAME" x="132.08" y="88.9" size="1.778" layer="96" display="off"/>
 <attribute name="TYPE" x="132.08" y="88.9" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C27" gate="G$1" x="152.4" y="88.9" smashed="yes">
+<instance part="C4" gate="G$1" x="152.4" y="88.9" smashed="yes">
 <attribute name="NAME" x="153.924" y="89.281" size="1.778" layer="95"/>
 <attribute name="VALUE" x="153.924" y="84.201" size="1.778" layer="96"/>
 <attribute name="MANUFACTURERPARTNUMBER" x="152.4" y="88.9" size="1.778" layer="96" display="off"/>
@@ -985,14 +985,14 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="132.08" y1="83.82" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="C27" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="83.82" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 <junction x="132.08" y="68.58"/>
-<pinref part="IC6" gate="G$1" pin="GND_1"/>
+<pinref part="IC1" gate="G$1" pin="GND_1"/>
 <wire x1="175.26" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="93.98" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="91.44" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
@@ -1002,19 +1002,19 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 <wire x1="162.56" y1="81.28" x2="162.56" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
 <junction x="152.4" y="68.58"/>
-<pinref part="IC6" gate="G$1" pin="GND_2"/>
+<pinref part="IC1" gate="G$1" pin="GND_2"/>
 <wire x1="175.26" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
 <junction x="162.56" y="91.44"/>
-<pinref part="IC6" gate="G$1" pin="GND_3"/>
+<pinref part="IC1" gate="G$1" pin="GND_3"/>
 <wire x1="175.26" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
 <junction x="162.56" y="88.9"/>
-<pinref part="IC6" gate="G$1" pin="GND_4"/>
+<pinref part="IC1" gate="G$1" pin="GND_4"/>
 <wire x1="175.26" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
 <junction x="162.56" y="86.36"/>
-<pinref part="IC6" gate="G$1" pin="GND_5"/>
+<pinref part="IC1" gate="G$1" pin="GND_5"/>
 <wire x1="175.26" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
 <junction x="162.56" y="83.82"/>
-<pinref part="IC6" gate="G$1" pin="GND_6"/>
+<pinref part="IC1" gate="G$1" pin="GND_6"/>
 <wire x1="175.26" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
 <junction x="162.56" y="81.28"/>
 </segment>
@@ -1027,38 +1027,38 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="C26" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="132.08" y1="91.44" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="G$1" pin="VCC_1"/>
+<pinref part="IC1" gate="G$1" pin="VCC_1"/>
 <wire x1="132.08" y1="96.52" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="101.6" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="104.14" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
 <junction x="132.08" y="96.52"/>
-<pinref part="IC6" gate="G$1" pin="VCC_2"/>
+<pinref part="IC1" gate="G$1" pin="VCC_2"/>
 <wire x1="144.78" y1="96.52" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="78.74" x2="144.78" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="78.74" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
 <junction x="144.78" y="96.52"/>
-<pinref part="IC6" gate="G$1" pin="VCC_3"/>
+<pinref part="IC1" gate="G$1" pin="VCC_3"/>
 <wire x1="175.26" y1="76.2" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="76.2" x2="144.78" y2="78.74" width="0.1524" layer="91"/>
 <junction x="144.78" y="78.74"/>
-<pinref part="IC6" gate="G$1" pin="DIN"/>
+<pinref part="IC1" gate="G$1" pin="DIN"/>
 <wire x1="175.26" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <junction x="132.08" y="104.14"/>
-<pinref part="IC6" gate="G$1" pin="ON"/>
+<pinref part="IC1" gate="G$1" pin="ON"/>
 <wire x1="175.26" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
 <junction x="132.08" y="101.6"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="C27" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
 <wire x1="152.4" y1="91.44" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="G$1" pin="VL"/>
+<pinref part="IC1" gate="G$1" pin="VL"/>
 <wire x1="152.4" y1="99.06" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="99.06" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
 <junction x="152.4" y="99.06"/>
@@ -1066,11 +1066,11 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 </net>
 <net name="GNDI" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="GND2_1"/>
+<pinref part="IC1" gate="G$1" pin="GND2_1"/>
 <pinref part="GNDI1" gate="G$1" pin="GNDI"/>
 <wire x1="208.28" y1="114.3" x2="231.14" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="114.3" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="G$1" pin="GND2_2"/>
+<pinref part="IC1" gate="G$1" pin="GND2_2"/>
 <wire x1="231.14" y1="111.76" x2="231.14" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="109.22" x2="231.14" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="106.68" x2="231.14" y2="104.14" width="0.1524" layer="91"/>
@@ -1080,19 +1080,19 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 <wire x1="231.14" y1="76.2" x2="231.14" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="111.76" x2="231.14" y2="111.76" width="0.1524" layer="91"/>
 <junction x="231.14" y="111.76"/>
-<pinref part="IC6" gate="G$1" pin="GND2_3"/>
+<pinref part="IC1" gate="G$1" pin="GND2_3"/>
 <wire x1="208.28" y1="109.22" x2="231.14" y2="109.22" width="0.1524" layer="91"/>
 <junction x="231.14" y="109.22"/>
-<pinref part="IC6" gate="G$1" pin="GND2_4"/>
+<pinref part="IC1" gate="G$1" pin="GND2_4"/>
 <wire x1="208.28" y1="106.68" x2="231.14" y2="106.68" width="0.1524" layer="91"/>
 <junction x="231.14" y="106.68"/>
-<pinref part="IC6" gate="G$1" pin="GND2_5"/>
+<pinref part="IC1" gate="G$1" pin="GND2_5"/>
 <wire x1="208.28" y1="104.14" x2="231.14" y2="104.14" width="0.1524" layer="91"/>
 <junction x="231.14" y="104.14"/>
-<pinref part="IC6" gate="G$1" pin="GND2_6"/>
+<pinref part="IC1" gate="G$1" pin="GND2_6"/>
 <wire x1="208.28" y1="101.6" x2="231.14" y2="101.6" width="0.1524" layer="91"/>
 <junction x="231.14" y="101.6"/>
-<pinref part="IC6" gate="G$1" pin="GND2_7"/>
+<pinref part="IC1" gate="G$1" pin="GND2_7"/>
 <wire x1="208.28" y1="99.06" x2="231.14" y2="99.06" width="0.1524" layer="91"/>
 <junction x="231.14" y="99.06"/>
 <pinref part="J2" gate="G$1" pin="3"/>
@@ -1113,37 +1113,37 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="DE"/>
+<pinref part="IC1" gate="G$1" pin="DE"/>
 <wire x1="208.28" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="81.28" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="G$1" pin="DOUT"/>
+<pinref part="IC1" gate="G$1" pin="DOUT"/>
 <wire x1="210.82" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BPR_TX" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="T1IN"/>
+<pinref part="IC1" gate="G$1" pin="T1IN"/>
 <wire x1="175.26" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
 <label x="157.48" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BPR_RX" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="R1OUT"/>
+<pinref part="IC1" gate="G$1" pin="R1OUT"/>
 <wire x1="175.26" y1="109.22" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
 <label x="157.48" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AKUSTIK_TX" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="T2IN"/>
+<pinref part="IC1" gate="G$1" pin="T2IN"/>
 <wire x1="175.26" y1="111.76" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
 <label x="157.48" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AKUSTIK_RX" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="R2OUT"/>
+<pinref part="IC1" gate="G$1" pin="R2OUT"/>
 <wire x1="175.26" y1="114.3" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
 <label x="157.48" y="114.3" size="1.778" layer="95"/>
 </segment>
@@ -1157,21 +1157,21 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="R2IN"/>
+<pinref part="IC1" gate="G$1" pin="R2IN"/>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="248.92" y1="93.98" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="T2OUT"/>
+<pinref part="IC1" gate="G$1" pin="T2OUT"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="R1IN"/>
+<pinref part="IC1" gate="G$1" pin="R1IN"/>
 <wire x1="248.92" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="81.28" x2="241.3" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="88.9" x2="208.28" y2="88.9" width="0.1524" layer="91"/>
@@ -1180,7 +1180,7 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="T1OUT"/>
+<pinref part="IC1" gate="G$1" pin="T1OUT"/>
 <wire x1="248.92" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="78.74" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="86.36" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
@@ -1374,7 +1374,7 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_50_2141_HORIZ
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6bWFpbDI0NjY4" projecturn="a.YnVzaW5lc3M6bWFpbDI0NjY4I0QyMDIwMDIyNDI2ODUxNDQzMQ" f3durn="urn:adsk.wipprod:dm.lineage:NDCQ_iAtTbONrmZCifnR8w" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="04016af3-e294-4b09-b1eb-3e157e0e3d2c" lastsyncedrevisionid="04016af3-e294-4b09-b1eb-3e157e0e3d2c" lastboardhashguid="cd6c4921-4993-725c-aa22-07fd4587646b" lastpushedtime="2020-09-09T07:39:53Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bWFpbDI0NjY4" projecturn="a.YnVzaW5lc3M6bWFpbDI0NjY4I0QyMDIwMDIyNDI2ODUxNDQzMQ" f3durn="urn:adsk.wipprod:dm.lineage:NDCQ_iAtTbONrmZCifnR8w" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="04016af3-e294-4b09-b1eb-3e157e0e3d2c" lastsyncedrevisionid="04016af3-e294-4b09-b1eb-3e157e0e3d2c" lastboardhashguid="cd6c4921-4993-725c-aa22-07fd4587646b" lastpushedtime="2020-09-09T07:39:53Z" linktopcb3d="false"/>
 <plain>
 </plain>
 <libraries>
@@ -1825,7 +1825,7 @@ design rules under a new name.</description>
 <board_group name="SYMBOLACC4"/>
 </groups>
 <elements>
-<element name="IC6" library="SamacSys_Parts" package="BGA32C127P8X11_1125X1500X362" override_package3d_urn="urn:adsk.eagle:package:22987915/2" override_package_urn="urn:adsk.eagle:footprint:22987916/1" value="LTM2882IY-5#PBF" x="17.47" y="29.75" smashed="yes">
+<element name="IC1" library="SamacSys_Parts" package="BGA32C127P8X11_1125X1500X362" override_package3d_urn="urn:adsk.eagle:package:22987915/2" override_package_urn="urn:adsk.eagle:footprint:22987916/1" value="LTM2882IY-5#PBF" x="17.47" y="29.75" smashed="yes">
 <attribute name="ARROW_PART_NUMBER" value="LTM2882IY-3#PBF" x="17.47" y="29.75" size="1.778" layer="27" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="" x="17.47" y="29.75" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="DGT ISO 2500VRMS 4CH RS232 32BGA" x="17.47" y="29.75" size="1.778" layer="27" display="off"/>
@@ -1840,7 +1840,7 @@ design rules under a new name.</description>
 <attribute name="TYPE" value="SMD" x="17.47" y="29.75" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="17.47" y="29.75" size="1.27" layer="27" align="center"/>
 </element>
-<element name="C26" library="Resistor Capacitor Standard Eagle 3D" package="CAPC2113X90N-0805-KEMET" package3d_urn="urn:adsk.eagle:package:19271181/1" value="10uF" x="25.17" y="35.92" smashed="yes" rot="R90">
+<element name="C3" library="Resistor Capacitor Standard Eagle 3D" package="CAPC2113X90N-0805-KEMET" package3d_urn="urn:adsk.eagle:package:19271181/1" value="10uF" x="25.17" y="35.92" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="CAP CER 10UF 10V X7R 0805" x="25.17" y="35.92" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/kemet/C0805C106K8RACTU/399-7411-1-ND/3317445" x="25.17" y="35.92" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURERNAME" value="KEMET" x="25.17" y="35.92" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1848,7 +1848,7 @@ design rules under a new name.</description>
 <attribute name="TYPE" value="SMD" x="25.17" y="35.92" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="26.819" y="35.92" size="1.27" layer="27" rot="R90" align="top-center"/>
 </element>
-<element name="C27" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1608X80N-0603-KEMET" package3d_urn="urn:adsk.eagle:package:19271169/1" value="1uF" x="21.69" y="38.65" smashed="yes">
+<element name="C4" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1608X80N-0603-KEMET" package3d_urn="urn:adsk.eagle:package:19271169/1" value="1uF" x="21.69" y="38.65" smashed="yes">
 <attribute name="DESCRIPTION" value="CAPCER 1UF 10V X7R 0603" x="21.69" y="38.65" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/kemet/C0603C105K8RACTU/399-11133-1-ND/4357815" x="21.69" y="38.65" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURERNAME" value="KEMET" x="21.69" y="38.65" size="1.778" layer="27" display="off"/>
@@ -1924,14 +1924,14 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="C26" pad="2"/>
-<contactref element="C27" pad="2"/>
-<contactref element="IC6" pad="B1"/>
-<contactref element="IC6" pad="B2"/>
-<contactref element="IC6" pad="B3"/>
-<contactref element="IC6" pad="B4"/>
-<contactref element="IC6" pad="B5"/>
-<contactref element="IC6" pad="B6"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="IC1" pad="B1"/>
+<contactref element="IC1" pad="B2"/>
+<contactref element="IC1" pad="B3"/>
+<contactref element="IC1" pad="B4"/>
+<contactref element="IC1" pad="B5"/>
+<contactref element="IC1" pad="B6"/>
 <contactref element="C2" pad="1"/>
 <wire x1="22.4851" y1="38.65" x2="25.17" y2="36.8296" width="0" layer="19" extent="1-1"/>
 <wire x1="19.375" y1="34.83" x2="22.4851" y2="38.65" width="0" layer="19" extent="1-1"/>
@@ -1943,17 +1943,17 @@ design rules under a new name.</description>
 <wire x1="6.5" y1="34.2" x2="13.025" y2="34.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
-<contactref element="C27" pad="1"/>
-<contactref element="IC6" pad="A7"/>
+<contactref element="C4" pad="1"/>
+<contactref element="IC1" pad="A7"/>
 <wire x1="20.645" y1="36.1" x2="20.8949" y2="38.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
-<contactref element="C26" pad="1"/>
-<contactref element="IC6" pad="A8"/>
-<contactref element="IC6" pad="B7"/>
-<contactref element="IC6" pad="B8"/>
-<contactref element="IC6" pad="A5"/>
-<contactref element="IC6" pad="A6"/>
+<contactref element="C3" pad="1"/>
+<contactref element="IC1" pad="A8"/>
+<contactref element="IC1" pad="B7"/>
+<contactref element="IC1" pad="B8"/>
+<contactref element="IC1" pad="A5"/>
+<contactref element="IC1" pad="A6"/>
 <wire x1="21.915" y1="34.83" x2="25.17" y2="35.0104" width="0" layer="19" extent="1-1"/>
 <wire x1="21.915" y1="36.1" x2="21.915" y2="34.83" width="0" layer="19" extent="1-1"/>
 <wire x1="20.645" y1="34.83" x2="21.915" y2="34.83" width="0" layer="19" extent="1-1"/>
@@ -1961,13 +1961,13 @@ design rules under a new name.</description>
 <wire x1="18.105" y1="36.1" x2="19.375" y2="36.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GNDI">
-<contactref element="IC6" pad="K1"/>
-<contactref element="IC6" pad="K2"/>
-<contactref element="IC6" pad="K3"/>
-<contactref element="IC6" pad="K4"/>
-<contactref element="IC6" pad="K5"/>
-<contactref element="IC6" pad="K6"/>
-<contactref element="IC6" pad="K7"/>
+<contactref element="IC1" pad="K1"/>
+<contactref element="IC1" pad="K2"/>
+<contactref element="IC1" pad="K3"/>
+<contactref element="IC1" pad="K4"/>
+<contactref element="IC1" pad="K5"/>
+<contactref element="IC1" pad="K6"/>
+<contactref element="IC1" pad="K7"/>
 <contactref element="J2" pad="3"/>
 <contactref element="C1" pad="2"/>
 <contactref element="J1" pad="3"/>
@@ -1982,8 +1982,8 @@ design rules under a new name.</description>
 <wire x1="29.9" y1="16.8" x2="6.5" y2="23.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
-<contactref element="IC6" pad="L6"/>
-<contactref element="IC6" pad="L5"/>
+<contactref element="IC1" pad="L6"/>
+<contactref element="IC1" pad="L5"/>
 <wire x1="18.105" y1="23.4" x2="19.375" y2="23.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
@@ -1992,36 +1992,36 @@ design rules under a new name.</description>
 <wire x1="6.5" y1="29.8" x2="6.5" y2="28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
-<contactref element="IC6" pad="L1"/>
+<contactref element="IC1" pad="L1"/>
 <contactref element="J2" pad="1"/>
 <wire x1="10.48" y1="16.69" x2="13.025" y2="23.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
-<contactref element="IC6" pad="L2"/>
+<contactref element="IC1" pad="L2"/>
 <contactref element="J2" pad="2"/>
 <wire x1="13.98" y1="16.69" x2="14.295" y2="23.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$27">
-<contactref element="IC6" pad="L3"/>
+<contactref element="IC1" pad="L3"/>
 <contactref element="J1" pad="1"/>
 <wire x1="22.9" y1="16.8" x2="15.565" y2="23.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$28">
-<contactref element="IC6" pad="L4"/>
+<contactref element="IC1" pad="L4"/>
 <contactref element="J1" pad="2"/>
 <wire x1="26.4" y1="16.8" x2="16.835" y2="23.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AKUSTIK_TX">
-<contactref element="IC6" pad="A2"/>
+<contactref element="IC1" pad="A2"/>
 </signal>
 <signal name="AKUSTIK_RX">
-<contactref element="IC6" pad="A1"/>
+<contactref element="IC1" pad="A1"/>
 </signal>
 <signal name="BPR_TX">
-<contactref element="IC6" pad="A4"/>
+<contactref element="IC1" pad="A4"/>
 </signal>
 <signal name="BPR_RX">
-<contactref element="IC6" pad="A3"/>
+<contactref element="IC1" pad="A3"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

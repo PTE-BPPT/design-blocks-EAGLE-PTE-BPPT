@@ -1163,7 +1163,7 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 </class>
 </classes>
 <parts>
-<part name="IC5" library="SamacSys_Parts" deviceset="LTC4415EMSE#PBF" device="" override_package3d_urn="urn:adsk.eagle:package:22987836/2" override_package_urn="urn:adsk.eagle:footprint:22987837/1">
+<part name="IC1" library="SamacSys_Parts" deviceset="LTC4415EMSE#PBF" device="" override_package3d_urn="urn:adsk.eagle:package:22987836/2" override_package_urn="urn:adsk.eagle:footprint:22987837/1">
 <attribute name="DESCRIPTION" value="IC OR CTRLR SRC SELECT 16MSOP"/>
 <attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/analog-devices-inc/LTC4415EMSE-PBF/LTC4415EMSE-PBF-ND/2769860"/>
 <attribute name="MANUFACTURERNAME" value="Analog Devices Inc."/>
@@ -1184,7 +1184,7 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C25" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0603-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271169/1" value="4.7uF">
+<part name="C3" library="Resistor Capacitor Standard Eagle 3D" deviceset="C0603-KEMET" device="" package3d_urn="urn:adsk.eagle:package:19271169/1" value="4.7uF">
 <attribute name="DESCRIPTION" value="CAP CER 4.7UF 6.3V X5R 0603"/>
 <attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/kemet/C0603C475K9PACTU/399-3482-1-ND/754775"/>
 <attribute name="MANUFACTURERNAME" value="KEMET"/>
@@ -1230,7 +1230,7 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 <plain>
 </plain>
 <instances>
-<instance part="IC5" gate="G$1" x="45.72" y="154.94" smashed="yes">
+<instance part="IC1" gate="G$1" x="45.72" y="154.94" smashed="yes">
 <attribute name="NAME" x="77.47" y="162.56" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="77.47" y="160.02" size="1.778" layer="96" align="center-left"/>
 <attribute name="MANUFACTURERPARTNUMBER" x="45.72" y="154.94" size="1.778" layer="96" display="off"/>
@@ -1268,7 +1268,7 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 <instance part="GND22" gate="1" x="63.5" y="114.3" smashed="yes">
 <attribute name="VALUE" x="60.96" y="111.76" size="1.778" layer="96"/>
 </instance>
-<instance part="C25" gate="G$1" x="101.6" y="147.32" smashed="yes">
+<instance part="C3" gate="G$1" x="101.6" y="147.32" smashed="yes">
 <attribute name="NAME" x="103.124" y="147.701" size="1.778" layer="95"/>
 <attribute name="VALUE" x="103.124" y="142.621" size="1.778" layer="96"/>
 <attribute name="MANUFACTURERPARTNUMBER" x="101.6" y="147.32" size="1.778" layer="96" display="off"/>
@@ -1323,9 +1323,9 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
-<pinref part="IC5" gate="G$1" pin="GND"/>
+<pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="63.5" y1="116.84" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="119.38" x2="63.5" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="142.24" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="119.38" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
@@ -1340,22 +1340,22 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 <net name="VDD" class="0">
 <segment>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
-<pinref part="IC5" gate="G$1" pin="IN1_1"/>
+<pinref part="IC1" gate="G$1" pin="IN1_1"/>
 <wire x1="10.16" y1="160.02" x2="10.16" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="152.4" x2="10.16" y2="154.94" width="0.1524" layer="91"/>
 <junction x="10.16" y="154.94"/>
-<pinref part="IC5" gate="G$1" pin="IN1_2"/>
+<pinref part="IC1" gate="G$1" pin="IN1_2"/>
 <wire x1="45.72" y1="152.4" x2="38.1" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="152.4" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <junction x="38.1" y="154.94"/>
-<pinref part="IC5" gate="G$1" pin="EN1"/>
+<pinref part="IC1" gate="G$1" pin="EN1"/>
 <wire x1="45.72" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="149.86" x2="38.1" y2="152.4" width="0.1524" layer="91"/>
 <junction x="38.1" y="152.4"/>
-<pinref part="IC5" gate="G$1" pin="!EN2"/>
+<pinref part="IC1" gate="G$1" pin="!EN2"/>
 <wire x1="45.72" y1="142.24" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="142.24" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
 <junction x="38.1" y="149.86"/>
@@ -1365,13 +1365,13 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 <segment>
 <pinref part="VCC1" gate="G$1" pin="VCCIO"/>
 <wire x1="10.16" y1="124.46" x2="10.16" y2="127" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="IN2_2"/>
+<pinref part="IC1" gate="G$1" pin="IN2_2"/>
 <wire x1="10.16" y1="127" x2="10.16" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="137.16" x2="43.18" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="137.16" x2="43.18" y2="127" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="127" x2="10.16" y2="127" width="0.1524" layer="91"/>
 <junction x="10.16" y="127"/>
-<pinref part="IC5" gate="G$1" pin="IN2_1"/>
+<pinref part="IC1" gate="G$1" pin="IN2_1"/>
 <wire x1="45.72" y1="139.7" x2="43.18" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="139.7" x2="43.18" y2="137.16" width="0.1524" layer="91"/>
 <junction x="43.18" y="137.16"/>
@@ -1380,31 +1380,31 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="OUT1_2"/>
+<pinref part="IC1" gate="G$1" pin="OUT1_2"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="81.28" y1="154.94" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="154.94" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="OUT1_1"/>
+<pinref part="IC1" gate="G$1" pin="OUT1_1"/>
 <wire x1="81.28" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="152.4" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
 <junction x="86.36" y="154.94"/>
-<pinref part="IC5" gate="G$1" pin="OUT2_2"/>
+<pinref part="IC1" gate="G$1" pin="OUT2_2"/>
 <wire x1="81.28" y1="139.7" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="139.7" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 <junction x="86.36" y="152.4"/>
-<pinref part="IC5" gate="G$1" pin="OUT2_1"/>
+<pinref part="IC1" gate="G$1" pin="OUT2_1"/>
 <wire x1="81.28" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="137.16" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
 <junction x="86.36" y="139.7"/>
-<pinref part="C25" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="149.86" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
 <junction x="101.6" y="154.94"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="CLIM2"/>
+<pinref part="IC1" gate="G$1" pin="CLIM2"/>
 <wire x1="45.72" y1="144.78" x2="30.48" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="144.78" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -1412,7 +1412,7 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="CLIM1"/>
+<pinref part="IC1" gate="G$1" pin="CLIM1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="147.32" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="147.32" x2="20.32" y2="139.7" width="0.1524" layer="91"/>
@@ -1605,7 +1605,7 @@ Source: &lt;a href="http://www.linear.com/docs/40584"&gt; Datasheet &lt;/a&gt;</
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6bWFpbDI0NjY4" projecturn="a.YnVzaW5lc3M6bWFpbDI0NjY4I0QyMDIwMDIyNDI2ODUxNDQzMQ" f3durn="urn:adsk.wipprod:dm.lineage:NDCQ_iAtTbONrmZCifnR8w" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="04016af3-e294-4b09-b1eb-3e157e0e3d2c" lastsyncedrevisionid="04016af3-e294-4b09-b1eb-3e157e0e3d2c" lastboardhashguid="cd6c4921-4993-725c-aa22-07fd4587646b" lastpushedtime="2020-09-09T07:39:53Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bWFpbDI0NjY4" projecturn="a.YnVzaW5lc3M6bWFpbDI0NjY4I0QyMDIwMDIyNDI2ODUxNDQzMQ" f3durn="urn:adsk.wipprod:dm.lineage:NDCQ_iAtTbONrmZCifnR8w" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="04016af3-e294-4b09-b1eb-3e157e0e3d2c" lastsyncedrevisionid="04016af3-e294-4b09-b1eb-3e157e0e3d2c" lastboardhashguid="cd6c4921-4993-725c-aa22-07fd4587646b" lastpushedtime="2020-09-09T07:39:53Z" linktopcb3d="false"/>
 <plain>
 </plain>
 <libraries>
@@ -1923,7 +1923,7 @@ design rules under a new name.</description>
 <board_group name="SYMBOLACC4"/>
 </groups>
 <elements>
-<element name="IC5" library="SamacSys_Parts" package="SOP50P490X110-17N" override_package3d_urn="urn:adsk.eagle:package:22987836/2" override_package_urn="urn:adsk.eagle:footprint:22987837/1" value="LTC4415EMSE#PBF" x="40.97" y="42.76" smashed="yes" rot="R270">
+<element name="IC1" library="SamacSys_Parts" package="SOP50P490X110-17N" override_package3d_urn="urn:adsk.eagle:package:22987836/2" override_package_urn="urn:adsk.eagle:footprint:22987837/1" value="LTC4415EMSE#PBF" x="40.97" y="42.76" smashed="yes" rot="R270">
 <attribute name="ARROW_PART_NUMBER" value="LTC4415EMSE#PBF" x="40.97" y="42.76" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/ltc4415emsepbf/linear-technology" x="40.97" y="42.76" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="IC OR CTRLR SRC SELECT 16MSOP" x="40.97" y="42.76" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1946,7 +1946,7 @@ design rules under a new name.</description>
 <attribute name="TYPE" value="SMD" x="43.97" y="47.49" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="43.97" y="45.841" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="C25" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1608X80N-0603-KEMET" package3d_urn="urn:adsk.eagle:package:19271169/1" value="4.7uF" x="43.02" y="38.21" smashed="yes">
+<element name="C3" library="Resistor Capacitor Standard Eagle 3D" package="CAPC1608X80N-0603-KEMET" package3d_urn="urn:adsk.eagle:package:19271169/1" value="4.7uF" x="43.02" y="38.21" smashed="yes">
 <attribute name="DESCRIPTION" value="CAP CER 4.7UF 6.3V X5R 0603" x="43.02" y="38.21" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEYLINK" value="https://www.digikey.com/product-detail/en/kemet/C0603C475K9PACTU/399-3482-1-ND/754775" x="43.02" y="38.21" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURERNAME" value="KEMET" x="43.02" y="38.21" size="1.778" layer="27" display="off"/>
@@ -2005,8 +2005,8 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="IC5" pad="17"/>
-<contactref element="C25" pad="2"/>
+<contactref element="IC1" pad="17"/>
+<contactref element="C3" pad="2"/>
 <contactref element="C2" pad="2"/>
 <contactref element="R2" pad="1"/>
 <contactref element="C1" pad="2"/>
@@ -2018,41 +2018,41 @@ design rules under a new name.</description>
 <wire x1="35.1848" y1="41.3" x2="39.8096" y2="36.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
-<contactref element="IC5" pad="16"/>
-<contactref element="IC5" pad="15"/>
-<contactref element="IC5" pad="10"/>
-<contactref element="IC5" pad="9"/>
-<contactref element="C25" pad="1"/>
+<contactref element="IC1" pad="16"/>
+<contactref element="IC1" pad="15"/>
+<contactref element="IC1" pad="10"/>
+<contactref element="IC1" pad="9"/>
+<contactref element="C3" pad="1"/>
 <wire x1="42.22" y1="40.548" x2="42.72" y2="40.548" width="0" layer="19" extent="1-1"/>
 <wire x1="42.2249" y1="38.21" x2="42.22" y2="40.548" width="0" layer="19" extent="1-1"/>
 <wire x1="39.72" y1="40.548" x2="42.22" y2="40.548" width="0" layer="19" extent="1-1"/>
 <wire x1="39.22" y1="40.548" x2="39.72" y2="40.548" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD">
-<contactref element="IC5" pad="1"/>
+<contactref element="IC1" pad="1"/>
 <contactref element="C2" pad="1"/>
-<contactref element="IC5" pad="2"/>
-<contactref element="IC5" pad="3"/>
-<contactref element="IC5" pad="6"/>
+<contactref element="IC1" pad="2"/>
+<contactref element="IC1" pad="3"/>
+<contactref element="IC1" pad="6"/>
 <wire x1="42.72" y1="44.972" x2="43.0604" y2="47.49" width="0" layer="19" extent="1-1"/>
 <wire x1="42.22" y1="44.972" x2="42.72" y2="44.972" width="0" layer="19" extent="1-1"/>
 <wire x1="41.72" y1="44.972" x2="42.22" y2="44.972" width="0" layer="19" extent="1-1"/>
 <wire x1="40.22" y1="44.972" x2="41.72" y2="44.972" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCCIO">
-<contactref element="IC5" pad="8"/>
-<contactref element="IC5" pad="7"/>
+<contactref element="IC1" pad="8"/>
+<contactref element="IC1" pad="7"/>
 <contactref element="C1" pad="1"/>
 <wire x1="39.72" y1="44.972" x2="39.22" y2="44.972" width="0" layer="19" extent="1-1"/>
 <wire x1="37.9904" y1="36.9" x2="39.22" y2="44.972" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
-<contactref element="IC5" pad="5"/>
+<contactref element="IC1" pad="5"/>
 <contactref element="R1" pad="2"/>
 <wire x1="36.8152" y1="41.3" x2="40.72" y2="44.972" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
-<contactref element="IC5" pad="4"/>
+<contactref element="IC1" pad="4"/>
 <contactref element="R2" pad="2"/>
 <wire x1="41.22" y1="44.972" x2="38.5652" y2="48.98" width="0" layer="19" extent="1-1"/>
 </signal>
